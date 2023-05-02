@@ -16,6 +16,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <!-- Optional SonarQube URL -->
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <!-- Optional SonarQube authentication token -->
+    <sonar.login>8f25ecebbc3c3ca88d8a9bfedbdd88386cc3849d</sonar.login>
   </properties>
 
   
@@ -122,6 +126,11 @@
                 <port>7000</port>
                 <contextReloadable>true</contextReloadable>
             </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.0.2155</version>
         </plugin>
       </plugins>
     </pluginManagement>
