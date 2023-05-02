@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Booking Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form method="post" action="/booking">
+		<h1>Hotel Booking Form</h1>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required>
+		
+		<label for="checkin">Check-in:</label>
+		<input type="date" id="checkin" name="checkin" required>
+		
+		<label for="checkout">Check-out:</label>
+		<input type="date" id="checkout" name="checkout" required>
+		
+		<label for="roomtype">Room Type:</label>
+		<select id="roomtype" name="roomtype">
+			<option value="single">Single</option>
+			<option value="double">Double</option>
+			<option value="suite">Suite</option>
+		</select>
+		
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments"></textarea>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
