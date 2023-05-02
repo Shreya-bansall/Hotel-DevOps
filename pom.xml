@@ -19,7 +19,7 @@
     <!-- Optional SonarQube URL -->
     <sonar.host.url>http://localhost:9000</sonar.host.url>
     <!-- Optional SonarQube authentication token -->
-    <sonar.login>8f25ecebbc3c3ca88d8a9bfedbdd88386cc3849d</sonar.login>
+    <sonar.login>sqp_8f25ecebbc3c3ca88d8a9bfedbdd88386cc3849d</sonar.login>
   </properties>
 
   
@@ -132,6 +132,11 @@
             <artifactId>sonar-maven-plugin</artifactId>
             <version>3.9.0.2155</version>
         </plugin>
+        <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.8.0.2131</version>
+      </plugin>
       </plugins>
     </pluginManagement>
   </build>
