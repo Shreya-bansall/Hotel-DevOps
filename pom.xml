@@ -143,6 +143,26 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.8.0.2131</version>
       </plugin>
+      <plugin>
+      <groupId>com.spotify</groupId>
+      <artifactId>docker-maven-plugin</artifactId>
+      <version>1.2.0</version>
+      <executions>
+        <execution>
+          <id>build-image</id>
+          <phase>package</phase>
+          <goals>
+            <goal>build</goal>
+            <goal>push</goal>
+          </goals>
+          <configuration>
+            <imageName>your-image-name</imageName>
+            <dockerDirectory>src/main/docker</dockerDirectory>
+            <pushImage>true</pushImage>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
       </plugins>
     </pluginManagement>
   </build>
